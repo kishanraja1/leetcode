@@ -1,4 +1,4 @@
-console.log('hello world')
+//LEVEL EASY - TWOSUM
 //nesting for loops - time complexity o(n^2)
 function twosum(nums, target){
     //parent for loop to go through the array items
