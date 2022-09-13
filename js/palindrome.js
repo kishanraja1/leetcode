@@ -1,4 +1,5 @@
 // PALINDROME - LEVEL EASY
+//o(n) timeg
 const palindrome = (x) => {
     //set variable for number as an array
     let num = x.toString().split("")
