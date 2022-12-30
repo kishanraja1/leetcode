@@ -6,7 +6,7 @@ const longestprefix = (arr) => {
     let firstWord = arr[0]
     let secondWord = arr[1]
 
-    if (secondWord[0] !== firstWord[0]) {
+    if (secondWord[0] !== firstWord[0] || arr.length < 2) {
         console.log('No common prefix')
         return
     }
@@ -16,13 +16,14 @@ const longestprefix = (arr) => {
         for (let j = 0; j < word.length; j++) {
             if (word[j] === firstWord[j]) {
                 console.log(word[j]);
-                prefix.push(word[j])
-                return
+                prefix.concat(word[j])
             } 
             
         }
         
     }
+
+    console.log(prefix);
 }
 
 longestprefix(['flower', 'flow', 'flight'])
